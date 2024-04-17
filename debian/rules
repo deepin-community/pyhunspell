@@ -1,4 +1,7 @@
 #!/usr/bin/make -f
 
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export PYBUILD_AFTER_TEST = cd {build_dir}; python{version} -c "import hunspell"
+
 %:
-	dh $@
+	dh $@ --buildsystem=pybuild --with python3

@@ -1,5 +1,53 @@
-template-repository (1.0-1) unstable; urgency=medium
+pyhunspell (0.5.5-2) unstable; urgency=medium
 
-  * Initial release
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.0.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Thomas Goirand ]
+  * Team upload.
+  * Removed Python 2 support.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 16 Aug 2019 11:53:10 +0200
+
+pyhunspell (0.5.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop all patches (all accepted/fixed upstream)
+  * Add python*-setuptools to build dependencies
+  * Drop ancient Python-Version and Python3-Version fields
+  * Switch to debhelper 12
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Enable all hardening build flags
+  * Add basic autopkgtest-pkg-python test suite
+
+ -- Benjamin Drung <bdrung@debian.org>  Sat, 02 Feb 2019 14:47:24 +0100
+
+pyhunspell (0.4.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Refresh license.patch and drop patches that were applied upstream
+  * Update debian/watch to use pypi.debian.net
+  * Fix typos (found by Lintian)
+  * Update Vcs links to point to https URLs
+  * Bump Standards-Version to 3.9.8 (no changes needed)
+  * Update copyright information about new upstream maintainer
+  * Switch to pybuild as build system
+
+ -- Benjamin Drung <bdrung@debian.org>  Thu, 29 Dec 2016 02:40:42 +0100
+
+pyhunspell (0.1-2) unstable; urgency=medium
+
+  * Fix Python3 patch that broke Python 2 module. Thanks to
+    Tomasz Buchert for the patch. (Closes: #770085, LP: #1326518)
+  * Add smoke test (to catch failures like above)
+  * Bump Standards-Version to 3.9.6
+  * Update homepage and debian/watch to point to the new upstream
+  * Build depend on dh-python.
+
+ -- Benjamin Drung <bdrung@debian.org>  Sun, 23 Nov 2014 14:52:49 +0100
+
+pyhunspell (0.1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #714459)
+
+ -- Benjamin Drung <bdrung@debian.org>  Sat, 29 Jun 2013 20:27:33 +0200

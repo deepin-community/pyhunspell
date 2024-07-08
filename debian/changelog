@@ -1,3 +1,9 @@
+pyhunspell (0.5.5-2deepin1) unstable; urgency=medium
+
+  * No source change upload against python 3.12.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Mon, 08 Jul 2024 09:53:59 +0200
+
 pyhunspell (0.5.5-2) unstable; urgency=medium
 
   [ Ondřej Nový ]
